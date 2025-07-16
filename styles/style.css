@@ -1,0 +1,124 @@
+/* Fira Sans Google Font Link Here */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Fira Sans", sans-serif;
+}
+
+/* CSS Variables */
+:root {
+    --text-color: #0E0E0E;
+    --bg-color: #F5F5F5;
+    --main-color: #006A50;
+}
+
+/* Start Repeated Style */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 15px 28px;
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background: var(--main-color);
+    border: 1.2px solid transparent;
+    transition: .35s ease;
+}
+
+.btn:hover {
+    color: #0E0E0E;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1.2px solid var(--main-color);
+}
+/* End Repeated Style */
+
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* Header
+   Navbar
+*/
+.navbar {
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+    background: transparent;
+    transition: .35s ease;
+}
+
+.logo h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 2.2rem;
+    letter-spacing: 1px;
+}
+
+
+.banner {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 50px;
+    background-color: #C6E4D6;
+    border-radius: 24px;
+    gap: 20px;
+}
+
+.banner_content {
+    /* border: 2px solid red; */
+}
+
+.banner_content h4 {
+    color: #0E0E0E80;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.banner_content h1 {
+    color: #0E0E0E;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 1.25rem 0;
+}
+
+.banner_img img {
+    width: 100%;
+    max-width: 580px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 576px) {
+    .banner {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .banner_content {
+        text-align: center;
+    }
+
+    .banner_content h1 {
+        font-size: 1.5rem;
+    }
+}
