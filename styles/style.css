@@ -22,6 +22,7 @@
 .container {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .btn {
@@ -40,6 +41,18 @@
     background-color: transparent;
     cursor: pointer;
     border: 1.2px solid var(--main-color);
+}
+
+.section_gap {
+    margin: 60px auto;
+}
+
+.section_title {
+    color: #0E0E0E;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 3rem;
 }
 /* End Repeated Style */
 
@@ -107,11 +120,61 @@ body {
     max-width: 580px;
 }
 
+/* Pillers Section */
+.pillers_card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.box {
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+}
+
+.box img {
+    width: 100%;
+    max-width: 64px;
+    height: auto;
+}
+
+.box h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.box p {
+    color: #0E0E0EB3;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive Design */
 @media screen and (max-width: 576px) {
-    .banner {
+    .banner,
+    .pillers_card {
         flex-direction: column;
-        height: 100%;
     }
 
     .banner_content {
@@ -120,5 +183,9 @@ body {
 
     .banner_content h1 {
         font-size: 1.5rem;
+    }
+
+    .pillers_card {
+        text-align: center;
     }
 }
