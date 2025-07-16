@@ -151,9 +151,35 @@ body {
     font-weight: 400;
 }
 
+/* Future Section */
+.future_section .pillers_card .box p {
+    margin-bottom: 20px;
+}
 
+.future_section .pillers_card .box:nth-child(1) {
+    background-color: #D5E1F5;
+}
 
+.future_section .pillers_card .box:nth-child(2) {
+    background-color: #C6E4D6;
+}
 
+.future_section .pillers_card .box:nth-child(3) {
+    background-color: #F7EBCF;
+}
+
+.box1 .btn {
+    color: #fff;
+    background: #5490F5;
+}
+.box2 .btn {
+    color: #fff;
+    background: #09A15C;
+}
+.box3 .btn {
+    color: #fff;
+    background: #FFC239;
+}
 
 
 
